@@ -19,8 +19,8 @@ rel="stylesheet"
 <div class="weather-app">
 <header>
  <div class="search-bar">
-<form class="search-form">
-<input type="text" placeholder="Enter a city.." required class="search-form-input"/>
+<form class="search-form" id="search-form">
+<input type="text" placeholder="Enter a city.." required  id="search-form-input" class="search-form-input"/>
 <input type="submit" type value="Search" class="search-form-button">
 </form>
  </div>
@@ -29,7 +29,7 @@ rel="stylesheet"
 <div class="weather-app-data">
  <div class="weather-app-header">
 <div>
-<h1 class="weather-app-city"> Paris </h1>
+<h1 class="weather-app-city" id="city"> Paris </h1>
 <div class="weather-app-details">
 Tuesday 14:49, scattered clouds
 <br />
@@ -50,5 +50,6 @@ This project was coded with 💗 by
 <a href="https://netlify.app"> hosted on Netlify </a> 
 </footer>
 </div>
+<script src="src/index.js"></script>
 </body>
 </html>
