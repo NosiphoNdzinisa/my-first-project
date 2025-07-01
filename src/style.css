@@ -24,6 +24,16 @@ overflow: hidden;
   pointer-events: none;
 }
 
+.phoenix-img {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: auto;
+  opacity: 3;
+  z-index: 0;
+  pointer-events: none;
+}
 a {
   color: #8a66d9;
   text-decoration: none;
