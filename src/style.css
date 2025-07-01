@@ -1,6 +1,7 @@
 body {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background:linear-gradient(to bottom right,#f8f6f9,#e0eafc);
+background:linear-gradient(to bottom right,#fef6ff,#e2f0ff);
+background-attachment: fixed;
 color: #333;
 padding: 40px 20px;
 display: flex;
@@ -8,8 +9,10 @@ justify-content: center;
 align-items: center;
 min-height: 100vh;
 flex-direction: column;
-text-align: left;
+position: relative;
+overflow: hidden;
 }
+
 
 a {
   color: #8a66d9;
@@ -34,29 +37,31 @@ a:hover {
 
 .weather-app::before {
   content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 80px;
-  height: 80px;
-  background:
-  url("https: //upload .wikimedia .org/wikipedia/commons/thumb/ 0 / 0 /Blue_Morpho_Butterfly_-_ventral_view.jpg/640px-Blue_Morpho_Butterfly_-_ventral_view.jpg") no-repeat;
-  opacity: 0.15;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 180px;
+  height: 180px;
+  background:url("./images/butterfly.png.png")
+  no-repeat center center / contain;
+  opacity: 0.08;
   z-index: 0;
+  pointer-events: none;
 }
 
 .weather-app::after {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
-  background:
-  url("https://upload.wikimedia.org/wikipedia/commons/0/0f/Phoenix_Bird_illustration.png") no-repeat center center / contain;
-  opacity: 0.08;
-  z-index: 0;
-}
+    content: "";
+    background:
+    url("https://www.pngall.com/wp-content/uploads/4/Phoenix-PNG-Image.png")
+    no-repeat center center / contain;
+    opacity: 0.06;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300%;
+    height: 300%;
+    z-index: 0;
+  }
 
 .search-bar {
   display: flex;
@@ -151,6 +156,7 @@ font-weight: bold;
   font-size: 24px;
   margin-left: 5px;
 }
+
 
 footer {
   text-align: center;
