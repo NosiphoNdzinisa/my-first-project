@@ -1,6 +1,23 @@
 body {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background:linear-gradient(to bottom right,#fef6ff,#e2f0ff);
+margin-top: 40px;
+}
+
+.app-title {
+position: absolute;
+margin-top: 0px;
+margin-bottom: 0px;
+top: 6px;
+left: 50%;
+transform: translate(-50%);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 24px;
+background: linear-gradient(to right, #d4af37,#f1d761);
+-webkit-background-clip: text;
+color: transparent;
+letter-spacing: 3px;
+z-index: 10;
 }
 
 .butterfly-img {
@@ -167,6 +184,7 @@ margin: 0 auto;
 .weather-forecast-temperature {
   padding: 0 10px;
 }
+
 footer {
   text-align: center;
   font-size: 13px;
